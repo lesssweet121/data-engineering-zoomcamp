@@ -68,7 +68,7 @@ You could just write it inline:
 
 ```sql
 with vendors as (
-    select distinct vendorid
+    select distinct vendor_id
     from {{ ref('stg_green_tripdata') }}
 )
 
